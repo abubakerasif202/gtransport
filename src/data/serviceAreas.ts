@@ -1,0 +1,30 @@
+export const serviceAreas = {
+  nsw: [
+    'Sydney Metropolitan Area',
+    'Sydney CBD',
+    'Wollongong',
+    'Canberra',
+    'Wagga Wagga',
+    'Narrandera',
+    'Griffith',
+    'Albury',
+    'Blue Mountains',
+    'Lithgow',
+    'Bathurst',
+    'Orange',
+    'Mudgee',
+    'Dubbo',
+    'Parkes',
+    'Central Coast',
+    'Newcastle',
+    'Muswellbrook',
+    'Tamworth',
+  ],
+  interstate: [
+    'Sydney, NSW',
+    'Brisbane, QLD',
+    'Melbourne, VIC',
+    'Adelaide, SA',
+    'Perth, WA',
+  ]
+};

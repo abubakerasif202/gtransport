@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-black: #0a0a0a;
+  --color-brand-charcoal: #141414;
+  --color-brand-slate: #1a1a1a;
+  --color-brand-gold: #d4af37;
+  --color-brand-gold-light: #f3d052;
+  --color-brand-red: #b22222;
+  --color-brand-red-dark: #8b0000;
+  
+  --color-surface: #141414;
+  --color-surface-raised: #1a1a1a;
+  
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #d1d5db;
+  --color-border: rgba(212, 175, 55, 0.2);
+  
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --spacing-18: 4.5rem;
+  --spacing-22: 5.5rem;
+  --spacing-30: 7.5rem;
+  --spacing-section: 6rem;
+  --spacing-section-lg: 8rem;
+
+  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+  --transition-duration-400: 400ms;
+  --transition-duration-slow: 600ms;
+}
+
+@layer utilities {
+  .transition-premium {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transition-duration: 400ms;
+  }
+}
+
+@layer base {
+  :root {
+    --brand-black: #0a0a0a;
+    --brand-charcoal: #141414;
+    --brand-slate: #1a1a1a;
+    --brand-gold: #d4af37;
+    --brand-gold-light: #f3d052;
+    --brand-red: #b22222;
+    --brand-red-dark: #8b0000;
+    --surface: #141414;
+    --surface-raised: #1a1a1a;
+    --text-primary: #ffffff;
+    --text-secondary: #d1d5db;
+    --border: rgba(212, 175, 55, 0.2);
+  }
+
+  body {
+    @apply bg-brand-black text-text-primary font-sans antialiased selection:bg-brand-red selection:text-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight text-text-primary;
+  }
+}

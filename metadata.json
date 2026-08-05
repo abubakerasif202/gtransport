@@ -1,0 +1,6 @@
+{
+  "name": "1st Class Express",
+  "description": "Premium Australian transport, freight, logistics, and fleet solutions provider.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
